@@ -93,8 +93,79 @@ const futureDirections = [
   }
 ];
 
+const realWorldExamples = [
+  {
+    title: 'Медицинская диагностика',
+    company: 'Google Health',
+    description: 'ИИ-система для раннего обнаружения рака молочной железы показывает точность на 11% выше, чем у врачей-радиологов',
+    impact: 'Спасены тысячи жизней',
+    year: '2020',
+    icon: 'Stethoscope',
+    color: 'primary'
+  },
+  {
+    title: 'Автономные транспортные средства',
+    company: 'Waymo',
+    description: 'Более 20 миллионов миль автономного вождения без участия водителя. ИИ анализирует окружение в реальном времени',
+    impact: 'Снижение аварийности на 90%',
+    year: '2024',
+    icon: 'Car',
+    color: 'secondary'
+  },
+  {
+    title: 'Предсказание структуры белков',
+    company: 'DeepMind AlphaFold',
+    description: 'Решена 50-летняя проблема биологии: предсказание 3D-структуры белков из аминокислотной последовательности',
+    impact: 'Ускорение разработки лекарств в 100 раз',
+    year: '2021',
+    icon: 'Dna',
+    color: 'primary'
+  },
+  {
+    title: 'Перевод в реальном времени',
+    company: 'Google Translate',
+    description: 'Нейронный машинный перевод поддерживает 133 языка, обрабатывая миллиарды запросов ежедневно с качеством, близким к человеческому',
+    impact: 'Связь между 5 млрд людей',
+    year: '2023',
+    icon: 'Languages',
+    color: 'secondary'
+  },
+  {
+    title: 'Оптимизация энергосетей',
+    company: 'DeepMind для Google',
+    description: 'ИИ-система управления центрами обработки данных снижает энергопотребление охлаждения на 40%',
+    impact: 'Экономия миллионов кВт⋅ч',
+    year: '2016',
+    icon: 'Zap',
+    color: 'primary'
+  },
+  {
+    title: 'Персонализированное образование',
+    company: 'Khan Academy GPT',
+    description: 'ИИ-тьютор адаптирует материал под каждого ученика, обеспечивая персональный темп и стиль обучения',
+    impact: 'Улучшение успеваемости на 30%',
+    year: '2023',
+    icon: 'GraduationCap',
+    color: 'secondary'
+  }
+];
+
+const timeline = [
+  { year: '1950', event: 'Тест Тьюринга', description: 'Алан Тьюринг предлагает критерий интеллектуальности машин' },
+  { year: '1956', event: 'Рождение ИИ', description: 'Дартмутская конференция вводит термин "искусственный интеллект"' },
+  { year: '1997', event: 'Deep Blue побеждает Каспарова', description: 'Компьютер впервые обыгрывает чемпиона мира по шахматам' },
+  { year: '2012', event: 'AlexNet революция', description: 'Глубокое обучение побеждает в ImageNet, начало эры deep learning' },
+  { year: '2016', event: 'AlphaGo vs Lee Sedol', description: 'ИИ осваивает древнюю игру Го, считавшуюся непокоримой' },
+  { year: '2017', event: 'Transformer архитектура', description: 'Статья "Attention is All You Need" меняет обработку языка' },
+  { year: '2020', event: 'GPT-3 175B параметров', description: 'Языковые модели достигают невиданных масштабов' },
+  { year: '2022', event: 'ChatGPT меняет мир', description: 'Генеративный ИИ становится доступным миллионам пользователей' },
+  { year: '2024', event: 'Мультимодальные модели', description: 'ИИ одновременно работает с текстом, изображениями, видео и звуком' },
+  { year: '2025+', event: 'На пути к AGI', description: 'Движение к системам с общим интеллектом' }
+];
+
 export default function Index() {
   const [selectedArch, setSelectedArch] = useState<number | null>(null);
+  const [selectedExample, setSelectedExample] = useState<number>(0);
 
   return (
     <div className="min-h-screen bg-background">
@@ -624,6 +695,80 @@ export default function Index() {
               </CardContent>
             </Card>
           </div>
+        </div>
+      </section>
+
+      <section className="py-20 px-6">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-16">
+            <Badge className="mb-4">Реальные примеры</Badge>
+            <h2 className="text-4xl font-bold font-heading mb-4">ИИ меняет мир прямо сейчас</h2>
+            <p className="text-muted-foreground max-w-3xl mx-auto">
+              Конкретные достижения искусственного интеллекта, которые уже работают 
+              и приносят реальную пользу миллионам людей по всему миру
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+            {realWorldExamples.map((example, idx) => (
+              <Card 
+                key={idx}
+                className={`cursor-pointer transition-all duration-300 hover:scale-[1.02] ${
+                  selectedExample === idx ? 'ring-2 ring-primary shadow-xl' : ''
+                }`}
+                onClick={() => setSelectedExample(idx)}
+              >
+                <CardContent className="p-6">
+                  <div className={`bg-${example.color}/10 w-12 h-12 rounded-lg flex items-center justify-center mb-4`}>
+                    <Icon name={example.icon as any} size={24} className={`text-${example.color}`} />
+                  </div>
+                  <h3 className="text-lg font-heading font-semibold mb-2">{example.title}</h3>
+                  <div className="text-xs text-primary mb-3">{example.company} • {example.year}</div>
+                  <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
+                    {example.description}
+                  </p>
+                  <div className="bg-muted/50 p-3 rounded-lg">
+                    <div className="text-xs text-muted-foreground mb-1">Результат:</div>
+                    <div className="text-sm font-medium">{example.impact}</div>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+
+          <Card className="bg-gradient-to-br from-primary/10 to-secondary/10 border-primary/20">
+            <CardContent className="p-8">
+              <div className="text-center mb-8">
+                <h3 className="text-2xl font-heading font-bold mb-2">Хронология развития ИИ</h3>
+                <p className="text-muted-foreground">От теста Тьюринга до современных мультимодальных систем</p>
+              </div>
+              <div className="relative">
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-primary via-secondary to-primary rounded-full" />
+                <div className="space-y-8">
+                  {timeline.map((item, idx) => (
+                    <div 
+                      key={idx}
+                      className={`flex items-center gap-8 ${
+                        idx % 2 === 0 ? 'flex-row' : 'flex-row-reverse'
+                      }`}
+                    >
+                      <div className={`flex-1 ${idx % 2 === 0 ? 'text-right' : 'text-left'}`}>
+                        <div className="inline-block bg-card p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                          <div className="text-2xl font-bold font-heading text-primary mb-1">{item.year}</div>
+                          <div className="text-lg font-semibold mb-2">{item.event}</div>
+                          <div className="text-sm text-muted-foreground">{item.description}</div>
+                        </div>
+                      </div>
+                      <div className="relative z-10">
+                        <div className="w-4 h-4 bg-primary rounded-full ring-4 ring-background" />
+                      </div>
+                      <div className="flex-1" />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </section>
 
