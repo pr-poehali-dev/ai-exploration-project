@@ -471,6 +471,162 @@ export default function Index() {
         </div>
       </section>
 
+      <section className="py-20 px-6 bg-card/30">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-16">
+            <Badge className="mb-4">Долгосрочные перспективы</Badge>
+            <h2 className="text-4xl font-bold font-heading mb-4">Перспективы развития ИИ</h2>
+            <p className="text-muted-foreground max-w-3xl mx-auto">
+              Искусственный интеллект продолжает стремительно развиваться, открывая новые горизонты 
+              возможностей и ставя перед человечеством как невероятные перспективы, так и важные вопросы
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-3 gap-8 mb-12">
+            <Card className="bg-gradient-to-br from-primary/5 to-transparent">
+              <CardContent className="p-8">
+                <div className="bg-primary/10 w-14 h-14 rounded-xl flex items-center justify-center mb-6">
+                  <Icon name="TrendingUp" size={28} className="text-primary" />
+                </div>
+                <h3 className="text-xl font-heading font-bold mb-4">Экспоненциальный рост</h3>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  Вычислительные мощности удваиваются каждые 3-4 месяца, что позволяет создавать 
+                  всё более сложные и мощные модели. Закон Мура для ИИ действует с ускорением, 
+                  открывая возможности для создания систем, превосходящих человеческие способности 
+                  в специализированных областях.
+                </p>
+                <p className="text-sm text-muted-foreground">
+                  К 2030 году ожидается создание моделей с триллионами параметров, способных 
+                  обрабатывать мультимодальную информацию на уровне, недостижимом сегодня.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-gradient-to-br from-secondary/5 to-transparent">
+              <CardContent className="p-8">
+                <div className="bg-secondary/10 w-14 h-14 rounded-xl flex items-center justify-center mb-6">
+                  <Icon name="Globe" size={28} className="text-secondary" />
+                </div>
+                <h3 className="text-xl font-heading font-bold mb-4">Глобальная интеграция</h3>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  ИИ становится неотъемлемой частью критической инфраструктуры: от энергосетей 
+                  до финансовых систем, от здравоохранения до образования. Интеллектуальные 
+                  системы будут координировать работу умных городов, оптимизировать логистику 
+                  и управлять ресурсами планеты.
+                </p>
+                <p className="text-sm text-muted-foreground">
+                  Прогнозируется, что к 2035 году ИИ будет участвовать в принятии решений 
+                  практически во всех сферах человеческой деятельности.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-gradient-to-br from-primary/5 to-transparent">
+              <CardContent className="p-8">
+                <div className="bg-primary/10 w-14 h-14 rounded-xl flex items-center justify-center mb-6">
+                  <Icon name="Lightbulb" size={28} className="text-primary" />
+                </div>
+                <h3 className="text-xl font-heading font-bold mb-4">Творческая революция</h3>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  ИИ трансформирует творческие индустрии, становясь соавтором в музыке, 
+                  литературе, дизайне и искусстве. Генеративные модели открывают новые формы 
+                  выражения, недоступные без вычислительной поддержки, создавая симбиоз 
+                  человеческой креативности и машинных возможностей.
+                </p>
+                <p className="text-sm text-muted-foreground">
+                  Уже сейчас ИИ создаёт музыку, фильмы и произведения искусства, 
+                  неотличимые от созданных человеком.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="space-y-8">
+            <Card>
+              <CardContent className="p-8">
+                <div className="flex gap-6 items-start">
+                  <div className="bg-primary/10 p-4 rounded-xl">
+                    <Icon name="Building2" size={32} className="text-primary" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-heading font-bold mb-4">Трансформация рынка труда</h3>
+                    <p className="text-muted-foreground leading-relaxed mb-4">
+                      Автоматизация на базе ИИ изменит структуру занятости: исчезнут миллионы рутинных 
+                      профессий, но появятся новые специальности, связанные с разработкой, обучением 
+                      и контролем интеллектуальных систем. По оценкам экспертов, до 40% текущих 
+                      профессий претерпят радикальные изменения в ближайшие 15 лет.
+                    </p>
+                    <p className="text-muted-foreground leading-relaxed">
+                      Критически важным станет непрерывное образование и адаптация к новым технологиям. 
+                      Возрастёт спрос на специалистов, способных работать в междисциплинарных областях 
+                      на стыке технологий и гуманитарных наук. Общество стоит перед необходимостью 
+                      переосмысления систем образования и социальной защиты.
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardContent className="p-8">
+                <div className="flex gap-6 items-start">
+                  <div className="bg-secondary/10 p-4 rounded-xl">
+                    <Icon name="Microscope" size={32} className="text-secondary" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-heading font-bold mb-4">Научные прорывы</h3>
+                    <p className="text-muted-foreground leading-relaxed mb-4">
+                      ИИ ускоряет научные открытия в биологии, физике, химии и материаловедении. 
+                      Системы машинного обучения анализируют петабайты экспериментальных данных, 
+                      выявляют неочевидные закономерности и предсказывают свойства новых соединений. 
+                      AlphaFold уже революционизировал предсказание структуры белков, открыв путь 
+                      к созданию новых лекарств.
+                    </p>
+                    <p className="text-muted-foreground leading-relaxed">
+                      В ближайшем будущем ИИ будет автономно формулировать научные гипотезы, 
+                      планировать эксперименты и интерпретировать результаты. Это ускорит разработку 
+                      лекарств от неизлечимых заболеваний, создание новых материалов и решение 
+                      фундаментальных проблем в физике и космологии.
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardContent className="p-8">
+                <div className="flex gap-6 items-start">
+                  <div className="bg-primary/10 p-4 rounded-xl">
+                    <Icon name="ShieldCheck" size={32} className="text-primary" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-heading font-bold mb-4">Вызовы и риски</h3>
+                    <p className="text-muted-foreground leading-relaxed mb-4">
+                      С ростом возможностей ИИ растут и связанные с ним риски. Необходимо решить 
+                      проблемы алгоритмической предвзятости, защиты от враждебного использования 
+                      технологий (deepfake, автономное оружие) и обеспечения выравнивания целей 
+                      мощных систем ИИ с человеческими ценностями.
+                    </p>
+                    <p className="text-muted-foreground leading-relaxed mb-4">
+                      Особую озабоченность вызывает концентрация технологической мощи в руках 
+                      небольшого числа корпораций и государств, что может усилить неравенство 
+                      и создать новые формы цифрового контроля. Международное сообщество работает 
+                      над созданием норм и регуляций для безопасного развития ИИ.
+                    </p>
+                    <p className="text-muted-foreground leading-relaxed">
+                      Ключевой вопрос — как обеспечить, чтобы развитие ИИ приносило пользу всему 
+                      человечеству, а не только узкой группе стейкхолдеров. Это требует 
+                      международного сотрудничества, открытых исследований и демократического 
+                      управления технологиями.
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       <footer className="py-12 px-6 border-t border-border">
         <div className="container mx-auto max-w-6xl text-center">
           <p className="text-sm text-muted-foreground">
