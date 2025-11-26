@@ -118,13 +118,21 @@ export default function Index() {
         <div className="container mx-auto max-w-6xl">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
-              <Badge className="mb-4">Нейронные сети и глубокое обучение</Badge>
               <h2 className="text-5xl font-bold font-heading mb-6 leading-tight">
-                Революция искусственного интеллекта
+                Искусственный интеллект: его возможности и потенциал
               </h2>
+              <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+                Искусственный интеллект трансформирует современный мир, открывая невероятные 
+                возможности во всех сферах человеческой деятельности. От медицинской диагностики 
+                до создания произведений искусства, от автономных транспортных средств до 
+                персонализированного образования — ИИ меняет способы решения сложнейших задач.
+              </p>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                Глубокое погружение в архитектуры нейронных сетей, их применение 
-                и перспективы развития. От базовых принципов до передовых исследований.
+                Нейронные сети, вдохновлённые структурой человеческого мозга, позволяют машинам 
+                обучаться на основе данных, распознавать сложные паттерны и принимать решения. 
+                Современные архитектуры глубокого обучения достигли уровня, превосходящего 
+                человеческие возможности во многих задачах — от распознавания образов до 
+                обработки естественного языка.
               </p>
               <div className="flex gap-4">
                 <a href="#tech" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity">
