@@ -157,8 +157,13 @@ export default function Index() {
           <div className="text-center mb-16">
             <Badge className="mb-4">Архитектуры</Badge>
             <h2 className="text-4xl font-bold font-heading mb-4">Типы нейронных сетей</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              Детальный разбор основных архитектур современных нейронных сетей
+            <p className="text-muted-foreground max-w-3xl mx-auto mb-4">
+              Детальный разбор основных архитектур современных нейронных сетей. Каждая архитектура 
+              разработана для решения специфических задач и обладает уникальными особенностями, 
+              которые делают её оптимальной для определённых типов данных и применений.
+            </p>
+            <p className="text-sm text-muted-foreground max-w-3xl mx-auto">
+              Нажмите на карточку, чтобы узнать больше о применении и ключевых особенностях каждой архитектуры.
             </p>
           </div>
 
@@ -215,6 +220,11 @@ export default function Index() {
           <div className="text-center mb-16">
             <Badge className="mb-4">Области применения</Badge>
             <h2 className="text-4xl font-bold font-heading mb-4">Где используется ИИ</h2>
+            <p className="text-muted-foreground max-w-3xl mx-auto">
+              Искусственный интеллект проникает во все сферы нашей жизни, революционизируя 
+              способы работы, обучения, лечения и взаимодействия с технологиями. От промышленного 
+              производства до творческих индустрий — ИИ открывает новые горизонты возможностей.
+            </p>
           </div>
 
           <Tabs defaultValue="vision" className="w-full">
@@ -349,8 +359,14 @@ export default function Index() {
           <div className="text-center mb-16">
             <Badge className="mb-4">Научные прорывы</Badge>
             <h2 className="text-4xl font-bold font-heading mb-4">Ключевые исследования</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              Основополагающие работы, изменившие развитие искусственного интеллекта
+            <p className="text-muted-foreground max-w-3xl mx-auto mb-4">
+              Основополагающие работы, изменившие развитие искусственного интеллекта. Эти исследования 
+              стали краеугольными камнями современного машинного обучения и открыли путь к созданию 
+              систем, способных решать задачи, ранее доступные только человеку.
+            </p>
+            <p className="text-sm text-muted-foreground max-w-3xl mx-auto">
+              Каждая область представляет собой активное направление исследований с постоянными 
+              инновациями и прорывами, расширяющими границы возможного.
             </p>
           </div>
 
@@ -382,8 +398,14 @@ export default function Index() {
           <div className="text-center mb-16">
             <Badge className="mb-4">Перспективы</Badge>
             <h2 className="text-4xl font-bold font-heading mb-4">Будущее искусственного интеллекта</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              Направления развития и потенциальные прорывы в области ИИ
+            <p className="text-muted-foreground max-w-3xl mx-auto mb-4">
+              Направления развития и потенциальные прорывы в области ИИ. Мы стоим на пороге 
+              фундаментальных изменений в технологии искусственного интеллекта, которые могут 
+              радикально трансформировать общество и открыть новые возможности для человечества.
+            </p>
+            <p className="text-sm text-muted-foreground max-w-3xl mx-auto">
+              От квантовых вычислений до искусственного общего интеллекта — эти направления 
+              определяют будущее технологического прогресса на десятилетия вперёд.
             </p>
           </div>
 
